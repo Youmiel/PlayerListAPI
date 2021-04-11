@@ -15,5 +15,5 @@ A MCDR plugin designed for listing players and Carpet/CarpetPlugin bots
   - get_list_player() returns the list of all players
   - get_list_bot()    returns the list of all bots, returns an empty list if no bots online or configuration 'isCarpet' is false
     
-- Further improvement:
-  [ ] add events for other plugin to use 
+- Further improvement:<br>
+[ ] add events for other plugin to use 
