@@ -108,7 +108,7 @@ def judge_bot(msg):
             return [True, 'bot', joined_player.group(1)]  # return [<isPlayer>,<type>,<name>]
         else:
             return [True, 'player', joined_player.group(1)]
-    return [False]
+    return [False, '', '']
 
 
 def add_tag(server: ServerInterface, bot):
