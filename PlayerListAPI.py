@@ -5,7 +5,7 @@ from mcdreforged.api.all import *
 
 PLUGIN_METADATA = {
     'id': 'player_list_api',
-    'version': '0.1.0',
+    'version': '0.1.1',
     'name': 'PlayerListAPI',
     'description': "A MCDR plugin for listing players and bots",
     'author': ['Youmiel'],
