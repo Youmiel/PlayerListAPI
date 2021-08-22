@@ -5,7 +5,7 @@ from mcdreforged.api.all import *
 
 PLUGIN_METADATA = {
     'id': 'player_list_api',
-    'version': '0.1.0',
+    'version': '0.1.1',
     'name': 'PlayerListAPI',
     'description': "A MCDR plugin for listing players and bots",
     'author': ['Youmiel'],
@@ -77,9 +77,9 @@ def on_player_left(server: ServerInterface, player):
         bot_list.remove(player)
 
 def load_config(server: ServerInterface):
-    global config;
+    global config
     try:
-        config = {};
+        config = {}
         with open(CONFIG_PATH) as file: 
             conf_yaml = yaml.load(file, Loader=yaml.Loader) # idk why CLoader doesn't work
             for key in default_config.keys():
@@ -100,7 +100,7 @@ def judge_bot(msg):
             return [True, 'bot', joined_player.group(1)] # return [<isPlayer>,<type>,<name>]
         else:
             return [True, 'player', joined_player.group(1)]
-    return [False]
+    return [False, 'some_type', 'something']
 
 def add_tag(server:ServerInterface, bot):
     if config['clean_logs']:
